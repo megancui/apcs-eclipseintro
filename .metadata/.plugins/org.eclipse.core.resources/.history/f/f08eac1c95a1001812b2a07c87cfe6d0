@@ -1,0 +1,13 @@
+package folder_Employee;
+import java.util.Scanner;
+
+public class Tester extends Employee{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp1 = new Employee();
+		Scanner reader = new Scanner(System.in);
+		System.out.print(emp1.tostring());
+	}
+
+}

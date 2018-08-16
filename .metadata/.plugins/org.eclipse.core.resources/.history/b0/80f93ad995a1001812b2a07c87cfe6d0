@@ -1,0 +1,31 @@
+package folder_Employee;
+import java.util.Scanner;
+import java.swing.*; 
+
+public class Tester extends Employee{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		JFrame GUI = new JFrame();
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("What is your first name? ");
+		
+		String fname = scanner.nextLine();
+		
+		System.out.print("What is your last name? ");
+		
+		String lname = scanner.nextLine();
+		
+		Employee emp1 = new Employee(fname, lname);
+		
+		System.out.print(emp1.tostring());
+		
+		GUI.setTitle("FirstGUIProgram");
+		GUI.setSize(300, 200);
+		GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		GUI.setVisible(true);
+	}
+
+}

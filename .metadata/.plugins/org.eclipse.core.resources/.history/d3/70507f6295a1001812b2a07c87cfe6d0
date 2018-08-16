@@ -1,0 +1,25 @@
+package folder_Employee;
+import java.util.Scanner;
+
+public class Tester extends Employee{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("What is your first name? ");
+		
+		String fname = scanner.nextLine();
+		
+		System.out.print("What is your last name? ");
+		
+		String lname = scanner.nextLine();
+		
+		Employee emp1 = new Employee(fname, lname);
+		
+		System.out.print(emp1.tostring());
+	}
+
+}
